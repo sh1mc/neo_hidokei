@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InvHidokei">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#DCE2FD"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5mm"
+            android:background="#3F51B5"
+            android:padding="2mm"
+            android:text="NEO・日時計 (すごい) - 逆☆日時計"
+            android:textAlignment="viewStart"
+            android:textColor="#FFFFFF"
+            android:textColorLink="#FFFFFF"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/arrow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5mm"
+            android:text="?"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textColorLink="#FFFFFF"
+            android:rotation="0"
+            android:textSize="150sp" />
+
+        <Button
+            android:id="@+id/button_calc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10mm"
+            android:layout_marginTop="5mm"
+            android:layout_marginBottom="5mm"
+            android:layout_marginRight="10mm"
+            android:text="太陽の方向を計算する"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5mm"
+            android:layout_marginRight="5mm"
+            android:outlineProvider="none"
+            android:text="ボタンを押してください。"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textColorLink="#FFFFFF"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#DCE2FD"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5mm"
+            android:background="#3F51B5"
+            android:padding="2mm"
+            android:text="NEO・日時計 (すごい)"
+            android:textAlignment="viewStart"
+            android:textColor="#FFFFFF"
+            android:textColorLink="#FFFFFF"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5mm"
+            android:layout_marginRight="5mm"
+            android:layout_marginBottom="5mm"
+            android:outlineProvider="none"
+            android:text="NEO・日時計は現代的なテクノロジーを使用した、全く新しい日時計です。\n\n日時計モード:\n\t太陽の方向から時刻を算出します。\n\n逆☆日時計モード:\n\t時刻から太陽の方向を算出します。"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:textColorLink="#FFFFFF"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button_calc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10mm"
+            android:layout_marginTop="3mm"
+            android:layout_marginRight="10mm"
+            android:text="日時計モード"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button_inv_hidokei"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10mm"
+            android:layout_marginTop="5mm"
+            android:layout_marginRight="10mm"
+            android:text="逆☆日時計モード"
+            android:textSize="20sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
